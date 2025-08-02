@@ -149,10 +149,48 @@ export default function HomePage() {
       <main className="flex flex-col items-center pt-16">
 
         {/* --- HERO SECTION --- */}
-        <section id="hero" className="flex flex-col md:flex-row items-center justify-center gap-12 px-6 w-full min-h-screen max-w-5xl mx-auto">
-          <div className="w-48 md:w-64 flex-shrink-0"><Image src="/profile-art.png" alt="Line art illustration" width={256} height={256} priority /></div>
-          <div className="text-center md:text-left"><h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">Keerthi Sree Marrapu</h1><p className="mt-4 text-lg text-gray-600 dark:text-gray-400 font-semibold">Product Engineer building AI and data-driven solutions.</p><p className="mt-2 text-lg max-w-md text-gray-600 dark:text-gray-400">I blend user-first product thinking with systems-level design to translate complex vision into actionable, impactful results.</p></div>
-        </section>
+        <section
+  id="hero"
+  className="flex flex-col md:flex-row items-center justify-center gap-12 px-6 w-full min-h-screen max-w-5xl mx-auto"
+>
+  <div className="w-48 md:w-64 flex-shrink-0">
+    <Image
+      src="/profile-art.png"
+      alt="Line art illustration"
+      width={256}
+      height={256}
+      priority
+    />
+  </div>
+
+  <div className="text-center md:text-left">
+    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+      Keerthi Sree Marrapu
+    </h1>
+    <p className="mt-4 text-lg text-gray-600 dark:text-gray-400 font-semibold">
+      Product Engineer building AI and data-driven solutions.
+    </p>
+    <p className="mt-2 text-lg max-w-md text-gray-600 dark:text-gray-400">
+      I blend user-first product thinking with systems-level design to translate complex vision into actionable, impactful results.
+    </p>
+
+    {/* --- Button moved inside this div --- */}
+    <div className="mt-8 flex justify-center md:justify-start">
+      <Button asChild>
+        <Link
+          href="/Keerthi_Sree_Marrapu_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download CV
+        </Link>
+      </Button>
+    </div>
+  </div>
+</section>
+
+
+        
 
         {/* --- ABOUT SECTION --- */}
         <section id="about" className="py-24 px-6 w-full bg-gray-50 dark:bg-gray-900">
@@ -327,10 +365,7 @@ export default function HomePage() {
             </div>
         </section>
         
-        {/* --- CONTACT & FOOTER --- */}
-        <section id="contact" className="py-24 px-6 w-full bg-gray-50 dark:bg-gray-800"><div className="text-center"><h2 className="text-3xl font-light text-gray-900 dark:text-white mb-12">Let's connect.</h2><div className="flex justify-center space-x-8"><a href="https://linkedin.com/in/mksree" target="_blank" rel="noopener noreferrer" className="text-lg text-cyan-600 dark:text-cyan-400 hover:underline">LinkedIn</a><a href="mailto:mksree066@gmail.com" className="text-lg text-cyan-600 dark:text-cyan-400 hover:underline">Email</a></div></div></section>
-        <footer className="w-full border-t border-gray-200 dark:border-gray-800 py-6"><p className="text-center text-sm text-gray-500 dark:text-gray-400">© {new Date().getFullYear()} Keerthi Sree Marrapu</p></footer>
-      </main>
+        </main>
   </>
   );
 }

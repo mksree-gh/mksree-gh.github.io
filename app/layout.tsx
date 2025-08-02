@@ -2,7 +2,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Jost } from 'next/font/google';
-import { ThemeProvider } from "@/components/theme-provider"; // Import the new provider
+import { ThemeProvider } from "@/components/theme-provider";
+import { Footer } from '@/components/shared/Footer';
 
 const jost = Jost({ subsets: ['latin'] });
 
@@ -42,7 +43,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <main>{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
