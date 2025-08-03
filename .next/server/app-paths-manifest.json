@@ -1,5 +1,10 @@
 {
-  "/page": "app/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/experience/ey/page": "app/experience/ey/page.js",
   "/experience/hushh/page": "app/experience/hushh/page.js",
-  "/experience/ey/page": "app/experience/ey/page.js"
+  "/page": "app/page.js",
+  "/privacy/page": "app/privacy/page.js",
+  "/projects/ai-pipeline/page": "app/projects/ai-pipeline/page.js",
+  "/projects/ai-tool-humility/page": "app/projects/ai-tool-humility/page.js",
+  "/projects/docusense/page": "app/projects/docusense/page.js"
 }

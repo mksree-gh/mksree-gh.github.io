@@ -132,7 +132,7 @@ export default function EyPage() {
           <figure className="mt-6">
             <Image src="/ey/dq-stakeholder-report-table.png" alt="Stakeholder report table" width={1200} height={675} className="rounded-lg border bg-muted" />
             <figcaption className="text-center text-sm text-muted-foreground mt-2">
-              The final stakeholder report used a simple Red-Amber-Green scoring system I proposed to make results actionable.
+              The final stakeholder report used a simple Red-Amber-Green scoring system the client wanted to make results actionable.
             </figcaption>
           </figure>
           <p className="mt-8">
