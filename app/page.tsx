@@ -220,7 +220,7 @@ export default function HomePage() {
               <p className="text-gray-600 dark:text-gray-400">Hushh.ai</p>
               <div className="mt-4 md:hidden">
                 <Link
-                  href="/experience/hushh"
+                  href="/experience/hushh/engineer"
                   className="text-sm font-semibold text-cyan-600 dark:text-cyan-400 hover:underline"
                 >
                   My Impact <ArrowRight className="inline h-4 w-4" />
@@ -230,7 +230,7 @@ export default function HomePage() {
           </div>
           <div className="hidden md:block">
             <Link
-              href="/experience/hushh"
+              href="/experience/hushh/engineer"
               className="text-sm font-semibold text-cyan-600 dark:text-cyan-400 hover:underline"
             >
               My Impact <ArrowRight className="inline h-4 w-4" />
@@ -250,7 +250,7 @@ export default function HomePage() {
               <p className="text-gray-600 dark:text-gray-400">Hushh.ai</p>
               <div className="mt-4 md:hidden">
                 <Link
-                  href="/experience/hushh"
+                  href="/experience/hushh/intern"
                   className="text-sm font-semibold text-cyan-600 dark:text-cyan-400 hover:underline"
                 >
                   My Impact <ArrowRight className="inline h-4 w-4" />
@@ -260,14 +260,15 @@ export default function HomePage() {
           </div>
           <div className="hidden md:block">
             <Link
-              href="/experience/hushh"
+              href="/experience/hushh/intern"
               className="text-sm font-semibold text-cyan-600 dark:text-cyan-400 hover:underline"
             >
               My Impact <ArrowRight className="inline h-4 w-4" />
             </Link>
           </div>
         </div>
-      </div>
+
+        </div>
 
       {/* Ernst & Young */}
       <div className="border-b border-gray-200 dark:border-gray-700 pb-8">

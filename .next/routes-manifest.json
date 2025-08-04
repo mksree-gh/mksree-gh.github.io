@@ -39,10 +39,16 @@
       "namedRegex": "^/experience/ey(?:/)?$"
     },
     {
-      "page": "/experience/hushh",
-      "regex": "^/experience/hushh(?:/)?$",
+      "page": "/experience/hushh/engineer",
+      "regex": "^/experience/hushh/engineer(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/experience/hushh(?:/)?$"
+      "namedRegex": "^/experience/hushh/engineer(?:/)?$"
+    },
+    {
+      "page": "/experience/hushh/intern",
+      "regex": "^/experience/hushh/intern(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/experience/hushh/intern(?:/)?$"
     },
     {
       "page": "/privacy",

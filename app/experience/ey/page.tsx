@@ -9,6 +9,17 @@ export default function EyPage() {
   return (
     <main className="container max-w-3xl mx-auto px-4 py-16 md:py-24">
 
+      {/* Back to Experience */}
+      <div className="mb-12">
+        <Link
+          href="/#experience"
+          className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
+        >
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          Back to Experience
+        </Link>
+      </div>
+
       {/* Page Header */}
       <header className="mb-12">
         <h1 className="text-4xl font-bold tracking-tight mb-4">
@@ -48,26 +59,26 @@ export default function EyPage() {
 
       {/* Project Highlights Section */}
       <section className="my-16 space-y-8">
-  <h2 className="text-2xl font-bold tracking-tight text-center">Project Highlights</h2>
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
-    <div className="p-6 bg-muted/30 rounded-lg">
-      <h3 className="font-semibold mb-2">Architected a Scalable Rule Engine</h3>
-      <p className="text-sm text-muted-foreground">Designed a system to process gigabytes of historical data, validating millions of records against 125+ business rules using a decoupled Python and JSON architecture.</p>
-    </div>
-    <div className="p-6 bg-muted/30 rounded-lg">
-      <h3 className="font-semibold mb-2">Engineered a Reusable Function Library</h3>
-      <p className="text-sm text-muted-foreground">Normalized 800+ unstructured business requirements into ~30 core, reusable Python functions, making the system highly maintainable.</p>
-    </div>
-    <div className="p-6 bg-muted/30 rounded-lg">
-      <h3 className="font-semibold mb-2">Pioneered Multi-State Validation</h3>
-      <p className="text-sm text-muted-foreground">My core idea: testing data as-is, trimmed, and uniform proved most errors were simple formatting issues, not factual inaccuracies.</p>
-    </div>
-    <div className="p-6 bg-muted/30 rounded-lg">
-      <h3 className="font-semibold mb-2">Automated Reporting & Visualization</h3>
-      <p className="text-sm text-muted-foreground">Built an automated pipeline that generated reports with visualizations (pie/bar charts) and a color-coded scoring system, surfacing 87% of critical DQ issues to make results actionable.</p>
-    </div>
-  </div>
-</section>
+        <h2 className="text-2xl font-bold tracking-tight text-center">Project Highlights</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+          <div className="p-6 bg-muted/30 rounded-lg">
+            <h3 className="font-semibold mb-2">Architected a Scalable Rule Engine</h3>
+            <p className="text-sm text-muted-foreground">Designed a system to process gigabytes of historical data, validating millions of records against 125+ business rules using a decoupled Python and JSON architecture.</p>
+          </div>
+          <div className="p-6 bg-muted/30 rounded-lg">
+            <h3 className="font-semibold mb-2">Engineered a Reusable Function Library</h3>
+            <p className="text-sm text-muted-foreground">Normalized 800+ unstructured business requirements into ~30 core, reusable Python functions, making the system highly maintainable.</p>
+          </div>
+          <div className="p-6 bg-muted/30 rounded-lg">
+            <h3 className="font-semibold mb-2">Pioneered Multi-State Validation</h3>
+            <p className="text-sm text-muted-foreground">My core idea: testing data as-is, trimmed, and uniform proved most errors were simple formatting issues, not factual inaccuracies.</p>
+          </div>
+          <div className="p-6 bg-muted/30 rounded-lg">
+            <h3 className="font-semibold mb-2">Automated Reporting & Visualization</h3>
+            <p className="text-sm text-muted-foreground">Built an automated pipeline that generated reports with visualizations (pie/bar charts) and a color-coded scoring system, surfacing 87% of critical DQ issues to make results actionable.</p>
+          </div>
+        </div>
+      </section>
 
       {/* Main Content Body */}
       <div className="prose prose-stone dark:prose-invert max-w-none text-base space-y-12">
@@ -141,7 +152,45 @@ export default function EyPage() {
         </div>
       </div>
 
-      {/* Back to home */}
+      {/* Skills & Tools Section */}
+      <section className="my-16">
+        <h2 className="text-3xl font-bold tracking-tight mb-8">Skills & Tools</h2>
+        <div className="grid grid-cols-1 gap-x-8 gap-y-8">
+
+          <div>
+            <h3 className="font-semibold mb-3 text-lg">Core Engineering & Data</h3>
+            <div className="flex flex-wrap gap-2">
+              <Badge variant="secondary">Python</Badge>
+              <Badge variant="secondary">Pandas</Badge>
+              <Badge variant="secondary">NumPy</Badge>
+              <Badge variant="secondary">JSON</Badge>
+              <Badge variant="secondary">Data Cleaning & Manipulation</Badge>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-3 text-lg">System Design & Architecture</h3>
+            <div className="flex flex-wrap gap-2">
+              <Badge variant="secondary">Rule-Based Systems</Badge>
+              <Badge variant="secondary">Software Architecture</Badge>
+              <Badge variant="secondary">Automation Scripting</Badge>
+              <Badge variant="secondary">Requirements Analysis</Badge>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-3 text-lg">Methodology & Domain</h3>
+            <div className="flex flex-wrap gap-2">
+              <Badge variant="secondary">Data Governance</Badge>
+              <Badge variant="secondary">Data Validation</Badge>
+              <Badge variant="secondary">Team Leadership & Mentoring</Badge>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Back to Experience */}
       <div className="mt-24">
         <Link
           href="/#experience"
