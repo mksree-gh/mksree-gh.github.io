@@ -4,3 +4,6 @@ Allow: /
 
 # Host
 Host: https://mksree-gh.github.io
+
+# Sitemaps
+Sitemap: https://mksree-gh.github.io/sitemap.xml
