@@ -34,7 +34,7 @@ export default function DocuSensePage() {
                     <div className="flex flex-wrap items-center text-sm text-muted-foreground gap-x-4 gap-y-2">
                         <div>
                             <span className="font-semibold">Role:</span>
-                            <span className="ml-2">Product Manager & ML Engineer</span>
+                            <span className="ml-2">Product & ML Engineer</span>
                         </div>
                         <span className="text-muted-foreground/50 hidden md:inline">|</span>
                         <div>
