@@ -1,0 +1,23 @@
+# Keerthi Sree Marrapu
+
+> Product Engineer building AI and data-driven solutions. Blends user-first product thinking with systems-level design to translate complex vision into actionable, impactful results.
+
+This document provides information about Keerthi Sree Marrapu's professional profile, focusing on their experience as a Product Engineer with expertise in AI and data solutions.
+
+## Resume
+
+- [Download CV](https://mksree-gh.github.io/Keerthi_Sree_Marrapu_Resume.pdf): Link to the full resume.
+
+## Experience Details
+
+- [My Impact](https://mksree-gh.github.io/experience/hushh/engineer): Details on the Product Engineer role at Hushh.ai.
+- [My Impact](https://mksree-gh.github.io/experience/hushh/intern): Details on the Product Management Intern role at Hushh.ai.
+- [My Impact](https://mksree-gh.github.io/experience/ey): Details on the Python Developer Intern role at Ernst & Young.
+
+## Professional Network
+
+- [LinkedIn](https://linkedin.com/in/mksree): Keerthi Sree Marrapu's LinkedIn profile.
+
+## Legal Information
+
+- [Privacy & Terms](https://mksree-gh.github.io/privacy): Privacy policy and terms of service.
