@@ -1,4 +1,4 @@
-// File: /Users/mksree/Documents/Portfolio/app/projects/ai-pipeline/page.tsx
+// File: /Users/mksree/mksree-gh.github.io/app/projects/ai-pipeline/page.tsx
 import * as entry from '../../../../../app/projects/ai-pipeline/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

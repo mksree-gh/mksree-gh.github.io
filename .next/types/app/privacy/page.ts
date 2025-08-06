@@ -1,4 +1,4 @@
-// File: /Users/mksree/Documents/Portfolio/app/privacy/page.tsx
+// File: /Users/mksree/mksree-gh.github.io/app/privacy/page.tsx
 import * as entry from '../../../../app/privacy/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

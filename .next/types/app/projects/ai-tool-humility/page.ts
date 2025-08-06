@@ -1,4 +1,4 @@
-// File: /Users/mksree/Documents/Portfolio/app/projects/ai-tool-humility/page.tsx
+// File: /Users/mksree/mksree-gh.github.io/app/projects/ai-tool-humility/page.tsx
 import * as entry from '../../../../../app/projects/ai-tool-humility/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
