@@ -1,7 +1,7 @@
 {
   "version": 4,
   "routes": {
-    "/projects/ai-pipeline": {
+    "/experience/hushh/engineer": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -14,8 +14,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/projects/ai-pipeline",
-      "dataRoute": "/projects/ai-pipeline.rsc",
+      "srcRoute": "/experience/hushh/engineer",
+      "dataRoute": "/experience/hushh/engineer.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -49,7 +49,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/projects/docusense": {
+    "/projects/ai-pipeline": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -62,8 +62,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/projects/docusense",
-      "dataRoute": "/projects/docusense.rsc",
+      "srcRoute": "/projects/ai-pipeline",
+      "dataRoute": "/projects/ai-pipeline.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -97,7 +97,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/experience/hushh/engineer": {
+    "/experience/iit-kgp": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -110,8 +110,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/experience/hushh/engineer",
-      "dataRoute": "/experience/hushh/engineer.rsc",
+      "srcRoute": "/experience/iit-kgp",
+      "dataRoute": "/experience/iit-kgp.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -121,7 +121,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/experience/ey": {
+    "/projects/docusense": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -134,8 +134,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/experience/ey",
-      "dataRoute": "/experience/ey.rsc",
+      "srcRoute": "/projects/docusense",
+      "dataRoute": "/projects/docusense.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -169,30 +169,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/experience/iit-kgp": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/experience/iit-kgp",
-      "dataRoute": "/experience/iit-kgp.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/": {
       "experimentalBypassFor": [
         {
@@ -208,6 +184,30 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/",
       "dataRoute": "/index.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/experience/ey": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/experience/ey",
+      "dataRoute": "/experience/ey.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
