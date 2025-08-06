@@ -2,16 +2,8 @@
   "version": 3,
   "pages404": true,
   "caseSensitive": false,
-  "basePath": "/mksree-gh.github.io",
+  "basePath": "",
   "redirects": [
-    {
-      "source": "/mksree-gh.github.io/",
-      "destination": "/mksree-gh.github.io",
-      "basePath": false,
-      "internal": true,
-      "statusCode": 308,
-      "regex": "^/mksree-gh\\.github\\.io/$"
-    },
     {
       "source": "/:path+/",
       "destination": "/:path+",

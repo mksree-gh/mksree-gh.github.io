@@ -1,15 +1,18 @@
+// next.config.js
 
-
-
+const isProd = process.env.NODE_ENV === 'production';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+
+  assetPrefix: isProd ? 'https://mksree-gh.github.io/' : undefined,
+  
+  basePath: '',
+
   images: {
     unoptimized: true,
   },
-  assetPrefix: '/mksree-gh.github.io',
-  basePath: '/mksree-gh.github.io',
 };
 
 module.exports = nextConfig;
