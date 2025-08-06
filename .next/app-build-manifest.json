@@ -16,7 +16,7 @@
       "static/chunks/874-437a265a67d6cfee.js",
       "static/chunks/app/layout-e53a827b6fcf902d.js"
     ],
-    "/experience/hushh/intern/page": [
+    "/experience/iit-kgp/page": [
       "static/chunks/webpack-9357924006012a93.js",
       "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
       "static/chunks/964-cce7aa04afaaa627.js",
@@ -25,19 +25,7 @@
       "static/chunks/63-63ed21df6f1fc3e7.js",
       "static/chunks/279-9f06317b9f27da8f.js",
       "static/chunks/961-1459d70eefb0a118.js",
-      "static/chunks/app/experience/hushh/intern/page-31d91cc7f24389b7.js"
-    ],
-    "/page": [
-      "static/chunks/webpack-9357924006012a93.js",
-      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
-      "static/chunks/964-cce7aa04afaaa627.js",
-      "static/chunks/main-app-52d6fc30bc612c7f.js",
-      "static/chunks/874-437a265a67d6cfee.js",
-      "static/chunks/63-63ed21df6f1fc3e7.js",
-      "static/chunks/279-9f06317b9f27da8f.js",
-      "static/chunks/961-1459d70eefb0a118.js",
-      "static/chunks/482-b5a0ff6aae81e858.js",
-      "static/chunks/app/page-dec3b41fbf5376dc.js"
+      "static/chunks/app/experience/iit-kgp/page-6a97f20df134bd48.js"
     ],
     "/experience/hushh/engineer/page": [
       "static/chunks/webpack-9357924006012a93.js",
@@ -60,6 +48,14 @@
       "static/chunks/279-9f06317b9f27da8f.js",
       "static/chunks/app/experience/ey/page-ab080318a2410239.js"
     ],
+    "/privacy/page": [
+      "static/chunks/webpack-9357924006012a93.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/964-cce7aa04afaaa627.js",
+      "static/chunks/main-app-52d6fc30bc612c7f.js",
+      "static/chunks/874-437a265a67d6cfee.js",
+      "static/chunks/app/privacy/page-de122d0386404b2c.js"
+    ],
     "/projects/ai-tool-humility/page": [
       "static/chunks/webpack-9357924006012a93.js",
       "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
@@ -79,13 +75,16 @@
       "static/chunks/874-437a265a67d6cfee.js",
       "static/chunks/app/projects/ai-pipeline/page-8555b1d936d32706.js"
     ],
-    "/privacy/page": [
+    "/experience/hushh/intern/page": [
       "static/chunks/webpack-9357924006012a93.js",
       "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
       "static/chunks/964-cce7aa04afaaa627.js",
       "static/chunks/main-app-52d6fc30bc612c7f.js",
       "static/chunks/874-437a265a67d6cfee.js",
-      "static/chunks/app/privacy/page-de122d0386404b2c.js"
+      "static/chunks/63-63ed21df6f1fc3e7.js",
+      "static/chunks/279-9f06317b9f27da8f.js",
+      "static/chunks/961-1459d70eefb0a118.js",
+      "static/chunks/app/experience/hushh/intern/page-31d91cc7f24389b7.js"
     ],
     "/projects/docusense/page": [
       "static/chunks/webpack-9357924006012a93.js",
@@ -96,7 +95,7 @@
       "static/chunks/63-63ed21df6f1fc3e7.js",
       "static/chunks/app/projects/docusense/page-2a9148f5ea77d014.js"
     ],
-    "/experience/iit-kgp/page": [
+    "/page": [
       "static/chunks/webpack-9357924006012a93.js",
       "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
       "static/chunks/964-cce7aa04afaaa627.js",
@@ -105,7 +104,8 @@
       "static/chunks/63-63ed21df6f1fc3e7.js",
       "static/chunks/279-9f06317b9f27da8f.js",
       "static/chunks/961-1459d70eefb0a118.js",
-      "static/chunks/app/experience/iit-kgp/page-6a97f20df134bd48.js"
+      "static/chunks/482-b5a0ff6aae81e858.js",
+      "static/chunks/app/page-dec3b41fbf5376dc.js"
     ]
   }
 }
