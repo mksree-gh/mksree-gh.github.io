@@ -1,12 +1,12 @@
 {
   "/_not-found/page": "/_not-found",
-  "/experience/iit-kgp/page": "/experience/iit-kgp",
-  "/experience/hushh/engineer/page": "/experience/hushh/engineer",
   "/experience/ey/page": "/experience/ey",
+  "/experience/hushh/engineer/page": "/experience/hushh/engineer",
   "/privacy/page": "/privacy",
-  "/projects/ai-tool-humility/page": "/projects/ai-tool-humility",
-  "/projects/ai-pipeline/page": "/projects/ai-pipeline",
+  "/experience/iit-kgp/page": "/experience/iit-kgp",
+  "/page": "/",
   "/experience/hushh/intern/page": "/experience/hushh/intern",
+  "/projects/ai-tool-humility/page": "/projects/ai-tool-humility",
   "/projects/docusense/page": "/projects/docusense",
-  "/page": "/"
+  "/projects/ai-pipeline/page": "/projects/ai-pipeline"
 }
