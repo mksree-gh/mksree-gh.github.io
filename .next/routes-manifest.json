@@ -51,6 +51,12 @@
       "namedRegex": "^/experience/hushh/intern(?:/)?$"
     },
     {
+      "page": "/experience/iit-kgp",
+      "regex": "^/experience/iit\\-kgp(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/experience/iit\\-kgp(?:/)?$"
+    },
+    {
       "page": "/privacy",
       "regex": "^/privacy(?:/)?$",
       "routeKeys": {},

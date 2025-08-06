@@ -302,6 +302,39 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+
+            {/* CoEAMT, IIT KGP */}
+      <div className="border-b border-gray-200 dark:border-gray-700 pb-8">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+          <div className="flex flex-col md:flex-row md:items-start gap-4">
+            <p className="md:w-48 flex-shrink-0 text-sm text-gray-500 dark:text-gray-400 font-medium">
+              Feb 2022 - Dec 2022
+            </p>
+            <div className="flex-1">
+              <h3 className="text-xl font-medium text-gray-900 dark:text-white">
+                Research Intern (ML/Data Science)
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400">CoEAMT, IIT Kharagpur</p>
+              <div className="mt-4 md:hidden">
+                <Link
+                  href="/experience/iit-kgp"
+                  className="text-sm font-semibold text-cyan-600 dark:text-cyan-400 hover:underline"
+                >
+                  My Impact <ArrowRight className="inline h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="hidden md:block">
+            <Link
+              href="/experience/iit-kgp"
+              className="text-sm font-semibold text-cyan-600 dark:text-cyan-400 hover:underline"
+            >
+              My Impact <ArrowRight className="inline h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
