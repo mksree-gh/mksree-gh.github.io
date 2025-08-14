@@ -100,7 +100,7 @@ export default function AiPipelinePage() {
                           height={600}
                           className="rounded-lg border bg-white p-4"
                       />
-                      <figcaption className="text-center text-xs text-muted-foreground mt-2">The autonomous analysis cycle.</figcaption>
+                      <figcaption className="text-center text-xs text-muted-foreground mt-2">The autonomous analysis cycle</figcaption>
                   </figure>
               </div>
                <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 items-start mt-12">
@@ -118,7 +118,7 @@ export default function AiPipelinePage() {
                           height={600}
                           className="rounded-lg border bg-white p-4"
                       />
-                      <figcaption className="text-center text-xs text-muted-foreground mt-2">The user-driven conversational flow.</figcaption>
+                      <figcaption className="text-center text-xs text-muted-foreground mt-2">The user-driven conversational flow</figcaption>
                   </figure>
               </div>
           </section>
@@ -136,10 +136,21 @@ export default function AiPipelinePage() {
                       height={675}
                       className="rounded-lg border bg-white p-4"
                   />
-                  <figcaption className="text-center text-xs text-muted-foreground mt-2">RAG provides the agents with long-term memory by retrieving relevant past interactions.</figcaption>
+                  <figcaption className="text-center text-xs text-muted-foreground mt-2">RAG provides the agents with long-term memory by retrieving relevant past interactions</figcaption>
               </figure>
           </section>
 
+      </div>
+
+      {/* Back Link Header */}
+      <div className="mt-16 mb-12">
+        <Link
+          href="/#projects"
+          className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
+        >
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          Back to Projects
+        </Link>
       </div>
     </main>
   );
