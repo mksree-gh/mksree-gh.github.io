@@ -1,12 +1,12 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/experience/ey/page": "app/experience/ey/page.js",
-  "/experience/hushh/intern/page": "app/experience/hushh/intern/page.js",
   "/experience/hushh/engineer/page": "app/experience/hushh/engineer/page.js",
-  "/privacy/page": "app/privacy/page.js",
-  "/projects/ai-pipeline/page": "app/projects/ai-pipeline/page.js",
-  "/page": "app/page.js",
+  "/experience/hushh/intern/page": "app/experience/hushh/intern/page.js",
   "/experience/iit-kgp/page": "app/experience/iit-kgp/page.js",
+  "/privacy/page": "app/privacy/page.js",
   "/projects/ai-tool-humility/page": "app/projects/ai-tool-humility/page.js",
-  "/projects/docusense/page": "app/projects/docusense/page.js"
+  "/projects/docusense/page": "app/projects/docusense/page.js",
+  "/page": "app/page.js",
+  "/projects/ai-pipeline/page": "app/projects/ai-pipeline/page.js"
 }

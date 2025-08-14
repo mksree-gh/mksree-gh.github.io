@@ -178,7 +178,7 @@ export default function HomePage() {
     <div className="mt-8 flex justify-center md:justify-start">
       <Button asChild>
         <Link
-          href="/Keerthi_Sree_Marrapu_Resume.pdf"
+          href="/MKS_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >

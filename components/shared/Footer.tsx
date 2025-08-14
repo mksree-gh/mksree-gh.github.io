@@ -49,7 +49,7 @@ export const Footer = () => {
                     {/* Right side: Download CV Button (Absolutely positioned on desktop) */}
                     <div className="md:absolute md:right-0">
                         <Button asChild>
-                            <Link href="/Keerthi_Sree_Marrapu_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <Link href="/MKS_CV.pdf" target="_blank" rel="noopener noreferrer">
                                 Download CV
                             </Link>
                         </Button>
