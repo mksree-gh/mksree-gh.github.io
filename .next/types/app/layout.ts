@@ -1,4 +1,4 @@
-// File: /Users/mksree/mksree-gh.github.io/app/layout.tsx
+// File: /Users/mksree/ rag_code_doc/code_to_analyze/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

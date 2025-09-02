@@ -4,8 +4,8 @@ import { Button } from '@/components/ui/button';
 
 export const Footer = () => {
     return (
-        <footer className="w-full border-t border-gray-200 dark:border-gray-800 bg-background">
-            <div className="max-w-6xl mx-auto py-16 px-6">
+        <footer id="contact" className="w-full border-t border-gray-200 dark:border-gray-800 bg-background">
+            <div className="max-w-6xl mx-auto py-8 md:py-16 px-6">
 
                 {/* "Let's connect." Heading */}
                 <div className="text-center mb-8">

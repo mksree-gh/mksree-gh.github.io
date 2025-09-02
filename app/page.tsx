@@ -15,7 +15,7 @@ import { SheetHeader, SheetTitle } from '@/components/ui/sheet';
 
 // --- Reusable Components for this Page ---
 
-const ThemeToggle = () => {
+const ThemeToggle = React.memo(() => {
   const { setTheme, theme } = useTheme();
   return (
     <Button
@@ -28,7 +28,7 @@ const ThemeToggle = () => {
       <span className="sr-only">Toggle theme</span>
     </Button>
   );
-};
+});
 
 const navItems = [
   { label: 'About', id: 'about' },
@@ -38,29 +38,37 @@ const navItems = [
   { label: 'Contact', id: 'contact' }
 ];
 
-const Navigation = () => {
+const Navigation = React.memo(() => {
   const [activeSection, setActiveSection] = useState('');
   const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = ['hero', 'about', 'experience', 'projects', 'conferences', 'contact'];
-      // Adjust the scroll offset to feel more accurate for the nav highlighting
-      const scrollPosition = window.scrollY + window.innerHeight / 2;
 
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const { offsetTop, offsetHeight } = element;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section);
-            break;
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const sections = ['hero', 'about', 'experience', 'projects', 'conferences', 'contact'];
+          const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+          for (const section of sections) {
+            const element = document.getElementById(section);
+            if (element) {
+              const { offsetTop, offsetHeight } = element;
+              if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+                setActiveSection(section);
+                break;
+              }
+            }
           }
-        }
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll(); // run initially
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -109,7 +117,11 @@ const Navigation = () => {
       </div>
     </header>
   );
-};
+});
+
+
+
+
 
 // --- DATA ---
 const projectData = [ 
@@ -135,6 +147,30 @@ const projectData = [
     link: "/projects/ai-tool-humility",
   }
 ];
+
+// Memoize project cards
+const ProjectCard = React.memo(({ project }: { project: typeof projectData[0] }) => (
+  <Link
+    href={project.link}
+    className="block border border-gray-200 dark:border-gray-700 rounded-lg p-6 bg-white/50 dark:bg-white/5 hover:shadow-lg transition-shadow hover:border-cyan-500 dark:hover:border-cyan-400"
+  >
+    <h3 className="text-xl font-medium text-gray-900 dark:text-white mb-4 transition-colors">
+      {project.title}
+    </h3>
+    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+      {project.description}
+    </p>
+    <p className="mt-4 text-sm">
+      <span className="font-semibold text-gray-600 dark:text-gray-400">Skills:</span> {project.skills}
+    </p>
+  </Link>
+));
+
+
+{projectData.map((p) => (
+  <ProjectCard key={p.title} project={p} />
+))}
+
 const conferenceData = {
     viva: ["/conferences/vivatech/vivatech-1.jpeg", "/conferences/vivatech/vivatech-2.jpeg", "/conferences/vivatech/vivatech-3.jpeg", "/conferences/vivatech/vivatech-4.jpeg"],
 
@@ -151,7 +187,7 @@ export default function HomePage() {
         {/* --- HERO SECTION --- */}
         <section
   id="hero"
-  className="flex flex-col md:flex-row items-center justify-center gap-12 px-6 w-full min-h-screen max-w-5xl mx-auto"
+  className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 px-6 w-full min-h-screen max-w-5xl mx-auto"
 >
   <div className="w-48 md:w-64 flex-shrink-0">
     <Image
@@ -160,6 +196,7 @@ export default function HomePage() {
       width={256}
       height={256}
       priority
+  sizes="(max-width: 768px) 192px, 256px"
     />
   </div>
 
@@ -193,8 +230,20 @@ export default function HomePage() {
         
 
         {/* --- ABOUT SECTION --- */}
-        <section id="about" className="py-24 px-6 w-full bg-gray-50 dark:bg-gray-900">
-            <div className="max-w-3xl mx-auto"><h2 className="text-3xl font-light text-center text-gray-900 dark:text-white mb-12">About</h2><div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed space-y-6"><p>I am a Product Engineer from IIT Kharagpur with over two years of experience in driving AI and data solutions. I specialize in blending user-focused product thinking with cross-functional team leadership.</p><p>My work involves translating vision into actionable insights through user research and data analysis, balancing creative problem-solving with technical and organizational constraints. I hold a micro-specialization in AI with hands-on ML/DL experience and a research interest in Indian philosophy.</p></div></div>
+        <section 
+          id="about" 
+          className="py-24 px-6 w-full bg-gray-50 dark:bg-gray-900"
+          aria-label="About Keerthi Sree Marrapu"
+        >
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-light text-center text-gray-900 dark:text-white mb-12">
+              About
+            </h2>
+            <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed space-y-6">
+              <p>I am a Product Engineer from IIT Kharagpur with over two years of experience in driving AI and data solutions. I specialize in blending user-focused product thinking with cross-functional team leadership.</p>
+              <p>My work involves translating vision into actionable insights through user research and data analysis, balancing creative problem-solving with technical and organizational constraints. I hold a micro-specialization in AI with hands-on ML/DL experience and a research interest in Indian philosophy.</p>
+            </div>
+          </div>
         </section>
 
         {/* --- EXPERIENCE (Dates and roles fixed) --- */}
@@ -375,7 +424,7 @@ export default function HomePage() {
                 <div>
                     <Carousel className="w-full" opts={{ loop: true }}>
 
-                        <CarouselContent>{conferenceData.viva.map((img, i) => (<CarouselItem key={i}><Image src={img} alt={`VivaTech image ${i+1}`} width={600} height={400} className="rounded-md object-cover aspect-[3/2]"/></CarouselItem>))}</CarouselContent>
+                        <CarouselContent>{conferenceData.viva.map((img, i) => (<CarouselItem key={i}><Image src={img} alt={`VivaTech image ${i+1}`} width={600} height={400} className="rounded-md object-cover aspect-[3/2]" loading="lazy" sizes="(max-width: 768px) 100vw, 50vw"/></CarouselItem>))}</CarouselContent>
 
                         <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 h-8 w-8 bg-black/50 text-white border-0 hover:bg-black/70" />
 
@@ -387,7 +436,7 @@ export default function HomePage() {
                 <div>
                     <Carousel className="w-full" opts={{ loop: true }}>
 
-                        <CarouselContent>{conferenceData.adfw.map((img, i) => (<CarouselItem key={i}><Image src={img} alt={`ADFW image ${i+1}`} width={600} height={400} className="rounded-md object-cover aspect-[3/2]"/></CarouselItem>))}</CarouselContent>
+                        <CarouselContent>{conferenceData.adfw.map((img, i) => (<CarouselItem key={i}><Image src={img} alt={`ADFW image ${i+1}`} width={600} height={400} className="rounded-md object-cover aspect-[3/2]" loading="lazy" sizes="(max-width: 768px) 100vw, 50vw"/></CarouselItem>))}</CarouselContent>
 
                         <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 h-8 w-8 bg-black/50 text-white border-0 hover:bg-black/70" />
 
